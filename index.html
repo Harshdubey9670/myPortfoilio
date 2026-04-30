@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Dubey - Full Stack Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for standard icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fluid WebGL Canvas -->
+    <canvas id="fluid"></canvas>
+
+    <!-- Header -->
+    <header class="header animate-on-scroll">
+        <div class="logo">HARSH</div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="btn-space">
+          <strong>DOWNLOAD RESUME</strong>
+          <div class="container-stars">
+            <div class="stars"></div>
+          </div>
+          <div class="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-spacing">
+        <div class="hero-content animate-on-scroll slide-in-left">
+            <h1 class="hero-heading"><span class="wave-anim">👋🏼</span> Hii, it's me <br><span class="highlight">Harsh.</span></h1>
+            <p>Full Stack Developer | React • Spring Boot • Flutter</p>
+            <a href="#contact" class="btn-svg"><span>Contact Me</span></a>
+        </div>
+        <div class="hero-image animate-on-scroll pop-in">
+            <div class="floating-icons">
+                <div class="icon icon-react"><i class="fa-brands fa-react"></i></div>
+                <div class="icon icon-spring"><i class="fa-solid fa-leaf"></i></div>
+                <div class="icon icon-flutter"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="icon icon-mongo"><i class="fa-solid fa-database"></i></div>
+            </div>
+            <img src="assets/images/hero_avatar.png" alt="Harsh sitting" class="avatar-hero">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-spacing">
+        <div class="about-image animate-on-scroll slide-in-left">
+            <div class="floating-icons">
+                <div class="icon icon-ts"><i class="fa-brands fa-js"></i></div>
+                <div class="icon icon-java"><i class="fa-brands fa-java"></i></div>
+                <div class="icon icon-git"><i class="fa-brands fa-github"></i></div>
+            </div>
+            <img src="assets/images/about_avatar.png" alt="Harsh standing" class="avatar-about scale-up">
+        </div>
+        <div class="about-content animate-on-scroll slide-in-right">
+            <h4 class="section-subtitle">ABOUT MYSELF</h4>
+            <h2 class="section-title">Know About Me<br>In Details</h2>
+            <p>Aspiring Full Stack Developer with hands-on knowledge in HTML, CSS, JavaScript, React, Node.js, and database management. Seeking an opportunity to apply development skills, learn industry practices, and contribute to innovative projects.</p>
+            <ul class="contact-list">
+                <li><i class="fa-solid fa-location-dot"></i> Sultanpur</li>
+                <li><i class="fa-solid fa-phone"></i> +91 9670342971</li>
+                <li><i class="fa-solid fa-envelope"></i> harshdubey112005@gmail.com</li>
+            </ul>
+            <a href="#contact" class="btn-glow">Know More About Me</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-spacing section-light">
+        <div class="container animate-on-scroll pop-in">
+            <h4 class="section-subtitle text-center">Skills I Have:</h4>
+            <h2 class="section-title text-center">MY SKILLS</h2>
+            
+            <div class="skills-grid">
+                <!-- Skill Cards -->
+                <div class="skill-card animate-on-scroll pop-in delay-1">
+                    <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+                    <h3>Java</h3>
+                    <p>Core Java & Advanced</p>
+                </div>
+                <div class="skill-card animate-on-scroll pop-in delay-2">
+                    <div class="skill-icon" style="color: #3178c6;"><b style="font-size: 24px;">TS</b></div>
+                    <h3>TypeScript</h3>
+                    <p>Type-safe JavaScript</p>
+                </div>
+                <div class="skill-card animate-on-scroll pop-in delay-3">
+                    <div class="skill-icon" style="color: #6db33f;"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>SpringBoot</h3>
+                    <p>Backend Framework</p>
+                </div>
+                <div class="skill-card animate-on-scroll pop-in delay-4">
+                    <div class="skill-icon" style="color: #61dafb;"><i class="fa-brands fa-react"></i></div>
+                    <h3>React.js</h3>
+                    <p>Frontend Apps</p>
+                </div>
+                <div class="skill-card animate-on-scroll pop-in delay-1">
+                    <div class="skill-icon" style="color: #02569b;"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Flutter</h3>
+                    <p>Cross-platform Mobile</p>
+                </div>
+                <div class="skill-card animate-on-scroll pop-in delay-2">
+                    <div class="skill-icon" style="color: #FF7B54;"><i class="fa-solid fa-server"></i></div>
+                    <h3>REST API</h3>
+                    <p>Microservices</p>
+                </div>
+                <div class="skill-card animate-on-scroll pop-in delay-3">
+                    <div class="skill-icon" style="color: #4db33d;"><i class="fa-solid fa-database"></i></div>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL Database</p>
+                </div>
+                <div class="skill-card animate-on-scroll pop-in delay-4">
+                    <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+                    <h3>Git/GitHub</h3>
+                    <p>Version Control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-spacing">
+        <div class="container animate-on-scroll slide-in-bottom">
+            <h4 class="section-subtitle text-center">My Projects</h4>
+            <h2 class="section-title text-center">SOME OF MY WORKS</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll pop-in delay-1">
+                    <div class="project-image" style="background: linear-gradient(135deg, #1fa2ff, #12d8fa);">
+                        <div class="device-mockup laptop-mockup">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://mindmateaichat.vercel.app" target="_blank">MINDMATE AI</a></h3>
+                        <p>Mental Wellness Chatbot featuring switchable Gemini personas (Therapist & CBT Coach) with glassmorphic UI.</p>
+                        <span class="tech-stack">React 18 • TypeScript • Vite • Tailwind</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll pop-in delay-2">
+                    <div class="project-image" style="background: linear-gradient(135deg, #ff416c, #ff4b2b);">
+                        <div class="device-mockup phone-mockup">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://grandbattlearena.netlify.app" target="_blank">Esport Tournament</a></h3>
+                        <p>Mobile app for organizing gaming tournaments, secure registration, and match scheduling.</p>
+                        <span class="tech-stack">Flutter • Dart • Authentication</span>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card animate-on-scroll pop-in delay-3">
+                    <div class="project-image" style="background: linear-gradient(135deg, #FF7B54, #ffb585);">
+                        <div class="device-mockup laptop-mockup">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Site</h3>
+                        <p>A full responsive UI/UX clone transformed into a personal portfolio with fluid animations.</p>
+                        <span class="tech-stack">Custom HTML • CSS • JS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative squiggles -->
+        <div class="floating-icons random-bg-icons">
+             <i class="fa-brands fa-react backdrop-icon" style="top: 10%; right: 10%;"></i>
+             <i class="fa-brands fa-node-js backdrop-icon" style="bottom: 10%; left: 5%;"></i>
+             <i class="fa-brands fa-java backdrop-icon" style="top: 50%; left: 40%; font-size: 80px; opacity: 0.5;"></i>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-spacing section-light">
+        <div class="container">
+            <div class="contact-box animate-on-scroll pop-in">
+                <div class="contact-content">
+                    <h2 class="section-title">CONTACT INFO</h2>
+                    <p>Interested in working together? Let's write say Hi!<br>I'm ready for collaboration projects, or just drop a friendly hello — I'd love to connect!</p>
+                    <a href="mailto:harshdubey112005@gmail.com" class="btn-svg"><span>Contact Me Now</span></a>
+                </div>
+                <div class="contact-avatar animate-on-scroll pop-in delay-2">
+                    <i class="fa-brands fa-java floating-micro icon-m-java"></i>
+                    <i class="fa-brands fa-js floating-micro icon-m-js"></i>
+                    <img src="assets/images/contact_avatar.png" alt="Harsh Contact Avatar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand animate-on-scroll slide-in-left">
+                <div class="logo">HARSH</div>
+                <p>I am just a ring here. I am looking for fullstack web full time gig outside Chitwan.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Email Address">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-links animate-on-scroll pop-in delay-1">
+                <h4>Address</h4>
+                <p>+91 9670342971</p>
+                <p>harshdubey112005@gmail.com</p>
+                <p>Sultanpur, India</p>
+            </div>
+            <div class="footer-links animate-on-scroll slide-in-right delay-2">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>MADE WITH ❤️ BY HARSH DUBEY</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
