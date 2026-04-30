@@ -74,6 +74,25 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         setTimeout(typeWriter, 1000); // start after 1s
     }
+
+    // Mobile Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    const navLinks = document.querySelectorAll('.nav a');
+
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            nav.classList.remove('active');
+        });
+    });
 });
 
 // ---- WEBGL Fluid particles ---- //
