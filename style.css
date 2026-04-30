@@ -608,6 +608,32 @@ ul {
     font-size: 12px;
     color: var(--primary-color);
     font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project-visit-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.project-visit-link i {
+    transition: transform 0.3s ease;
+}
+
+.project-visit-link:hover {
+    color: var(--primary-dark);
+}
+
+.project-visit-link:hover i {
+    transform: translateX(5px);
 }
 
 .random-bg-icons {
@@ -831,7 +857,7 @@ ul {
 
 .instagram { fill: #cc39a4; }
 .twitter { fill: #03A9F4; }
-.discord { fill: #8c9eff; }
+.linkedin { fill: #0077b5; }
 
 .card1:hover { cursor: pointer; transform: scale(1.1); background-color: #cc39a4; }
 .card1:hover .instagram { fill: white; }
@@ -842,8 +868,8 @@ ul {
 .card3:hover { cursor: pointer; transform: scale(1.1); background-color: black; }
 .card3:hover .github { fill: white; }
 
-.card4:hover { cursor: pointer; transform: scale(1.1); background-color: #8c9eff; }
-.card4:hover .discord { fill: white; }
+.card4:hover { cursor: pointer; transform: scale(1.1); background-color: #0077b5; }
+.card4:hover .linkedin { fill: white; }
 
 
 /* Space Button */
