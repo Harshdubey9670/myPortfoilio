@@ -42,18 +42,24 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Magnetic Elements
+    // Magnetic Elements - with touch optimization
     const magnets = document.querySelectorAll('.skill-card, .project-card, .contact-avatar, .nav a');
+    const isTouchDevice = () => {
+        return (('ontouchstart' in window) ||
+                (navigator.maxTouchPoints > 0) ||
+                (navigator.msMaxTouchPoints > 0));
+    };
+    const hitArea = isTouchDevice() ? 10 : 20;
+
     magnets.forEach(magnet => {
         magnet.addEventListener('mousemove', function(e) {
             const rect = this.getBoundingClientRect();
-            const hitArea = 20; 
             const x = e.clientX - rect.left - rect.width / 2;
             const y = e.clientY - rect.top - rect.height / 2;
-            
+
             this.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px) scale(1.05)`;
         });
-        
+
         magnet.addEventListener('mouseleave', function() {
             this.style.transform = 'translate(0px, 0px) scale(1)';
         });
@@ -84,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             nav.classList.toggle('active');
+            document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
         });
     }
 
@@ -91,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
             nav.classList.remove('active');
+            document.body.style.overflow = '';
         });
     });
 });
