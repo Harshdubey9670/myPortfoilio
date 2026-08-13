@@ -22,8 +22,10 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <a href="https://github.com/Harshdubey9670" target="_blank" class="desktop-only"><i class="fa-brands fa-github"></i> GitHub</a>
         </nav>
         
         <div class="header-actions" style="display: flex; align-items: center; gap: 15px;">
@@ -49,9 +51,14 @@
     <!-- Hero Section -->
     <section id="home" class="hero section-spacing">
         <div class="hero-content animate-on-scroll slide-in-left">
-            <h1 class="hero-heading" style="white-space: normal; word-wrap: break-word;"><span class="wave-anim">👋🏼</span> Hii, it's me <br><span class="highlight">Harsh.</span></h1>
-            <p>Full Stack Developer | React • Spring Boot • Flutter</p>
-            <a href="#contact" class="btn-svg"><span>Contact Me</span></a>
+            <h1 class="hero-heading" style="white-space: normal; word-wrap: break-word;">Harsh Dubey</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 15px; font-weight: 600; color: var(--text-dark);">Full Stack Developer</p>
+            <p style="margin-bottom: 20px; font-size: 0.95rem; color: var(--text-light); max-width: 500px; margin-left: auto; margin-right: auto;">I build modern, responsive web applications and full-stack products using React, Node.js, MongoDB, Java and Spring Boot.</p>
+            <p class="tech-line" style="font-size: 0.85rem; margin-bottom: 30px; font-weight: 600; color: var(--primary-color);">React • Node.js • Express • MongoDB • Java • Spring Boot</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="#projects" class="btn-svg"><span>View My Projects</span></a>
+                <a href="https://drive.google.com/file/d/1bcVBF_TQGpMGbsMH8JjYrwnAQu1-dZkI/view?usp=sharing" target="_blank" class="btn-glow" style="margin: 0; display: flex; align-items: center;">Download Resume</a>
+            </div>
         </div>
         <div class="hero-image animate-on-scroll pop-in">
             <div class="floating-icons">
@@ -76,13 +83,44 @@
         </div>
         <div class="about-content animate-on-scroll slide-in-right">
             <h4 class="section-subtitle">ABOUT MYSELF</h4>
-            <h2 class="section-title">Know About Me<br>In Details</h2>
-            <p>Aspiring Full Stack Developer with hands-on knowledge in HTML, CSS, JavaScript, React, Node.js, and database management. Seeking an opportunity to apply development skills, learn industry practices, and contribute to innovative projects.</p>
+            <h2 class="section-title">Know About Me</h2>
+            <p>I am a passionate Full Stack Developer with a B.Tech in Computer Science and Design. I specialize in building end-to-end applications, from responsive React frontends to robust Node.js and Java Spring Boot backends. My expertise spans REST APIs, database design, secure authentication, real-time integrations, and AI-powered applications. I believe in continuous learning and architecting scalable systems that solve real-world problems.</p>
             <ul class="contact-list">
                 <li><i class="fa-solid fa-location-dot"></i> Sultanpur</li>
                 <li><i class="fa-solid fa-envelope"></i> harshdubey112005@gmail.com</li>
             </ul>
             <a href="#contact" class="btn-glow">Know More About Me</a>
+        </div>
+    </section>
+
+    <!-- What I Build Section -->
+    <section id="what-i-build" class="what-i-build section-spacing">
+        <div class="container animate-on-scroll pop-in">
+            <h4 class="section-subtitle text-center">What I Build</h4>
+            <h2 class="section-title text-center">EXPERTISE AREAS</h2>
+            
+            <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div class="skill-card animate-on-scroll pop-in delay-1">
+                    <div class="skill-icon" style="color: #61dafb;"><i class="fa-brands fa-react"></i></div>
+                    <h3>Frontend Development</h3>
+                    <p style="font-size: 0.9rem; margin-top: 10px; line-height: 1.5;">Modern responsive interfaces using React, TypeScript and modern UI technologies.</p>
+                </div>
+                <div class="skill-card animate-on-scroll pop-in delay-2">
+                    <div class="skill-icon" style="color: #43853d;"><i class="fa-brands fa-node-js"></i></div>
+                    <h3>Backend Development</h3>
+                    <p style="font-size: 0.9rem; margin-top: 10px; line-height: 1.5;">REST APIs and backend services using Node.js, Express.js and Spring Boot.</p>
+                </div>
+                <div class="skill-card animate-on-scroll pop-in delay-3">
+                    <div class="skill-icon" style="color: #FF7B54;"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>Full-Stack Applications</h3>
+                    <p style="font-size: 0.9rem; margin-top: 10px; line-height: 1.5;">End-to-end applications connecting frontend, backend, databases and cloud services.</p>
+                </div>
+                <div class="skill-card animate-on-scroll pop-in delay-4">
+                    <div class="skill-icon" style="color: #1fa2ff;"><i class="fa-solid fa-brain"></i></div>
+                    <h3>AI-Powered Applications</h3>
+                    <p style="font-size: 0.9rem; margin-top: 10px; line-height: 1.5;">Applications that integrate AI capabilities into practical user workflows.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -92,47 +130,115 @@
             <h4 class="section-subtitle text-center">Skills I Have:</h4>
             <h2 class="section-title text-center">MY SKILLS</h2>
             
-            <div class="skills-grid">
-                <!-- Skill Cards -->
-                <div class="skill-card animate-on-scroll pop-in delay-1">
-                    <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
-                    <h3>Java</h3>
-                    <p>Core Java & Advanced</p>
+            <div class="skills-category animate-on-scroll slide-in-bottom" style="margin-top: 40px;">
+                <h3 class="category-title" style="margin-bottom: 20px; text-align: center; color: var(--primary-color);">Languages</h3>
+                <div class="skills-grid" style="margin-bottom: 40px; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px;">
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-brands fa-java" style="color: #ED8B00; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Java</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-brands fa-js" style="color: #F7DF1E; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">JavaScript</p></div>
+                    <div class="skill-card" style="padding: 15px;"><b style="color: #3178c6; font-size: 1.5rem;">TS</b> <p style="margin-top: 10px; font-weight: 600;">TypeScript</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-brands fa-html5" style="color: #E34F26; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">HTML</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-brands fa-css3-alt" style="color: #1572B6; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">CSS</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-mobile-screen" style="color: #0175C2; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Dart</p></div>
                 </div>
-                <div class="skill-card animate-on-scroll pop-in delay-2">
-                    <div class="skill-icon" style="color: #3178c6;"><b style="font-size: 24px;">TS</b></div>
-                    <h3>TypeScript</h3>
-                    <p>Type-safe JavaScript</p>
+            </div>
+
+            <div class="skills-category animate-on-scroll slide-in-bottom delay-1">
+                <h3 class="category-title" style="margin-bottom: 20px; text-align: center; color: var(--primary-color);">Frontend</h3>
+                <div class="skills-grid" style="margin-bottom: 40px; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px;">
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-brands fa-react" style="color: #61dafb; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">React</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-bolt" style="color: #B73BFE; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Vite</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-wind" style="color: #38B2AC; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Tailwind CSS</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-film" style="color: #0055FF; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Framer Motion</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-cubes" style="color: #443E38; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Zustand</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-database" style="color: #FF4154; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">TanStack Query</p></div>
                 </div>
-                <div class="skill-card animate-on-scroll pop-in delay-3">
-                    <div class="skill-icon" style="color: #6db33f;"><i class="fa-solid fa-leaf"></i></div>
-                    <h3>SpringBoot</h3>
-                    <p>Backend Framework</p>
+            </div>
+
+            <div class="skills-category animate-on-scroll slide-in-bottom delay-2">
+                <h3 class="category-title" style="margin-bottom: 20px; text-align: center; color: var(--primary-color);">Backend</h3>
+                <div class="skills-grid" style="margin-bottom: 40px; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px;">
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-brands fa-node-js" style="color: #43853D; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Node.js</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-brands fa-node" style="color: #404D59; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Express.js</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-leaf" style="color: #6db33f; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Spring Boot</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-network-wired" style="color: #FF7B54; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">REST APIs</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-plug" style="color: #010101; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Socket.IO</p></div>
                 </div>
-                <div class="skill-card animate-on-scroll pop-in delay-4">
-                    <div class="skill-icon" style="color: #61dafb;"><i class="fa-brands fa-react"></i></div>
-                    <h3>React.js</h3>
-                    <p>Frontend Apps</p>
+            </div>
+
+            <div class="skills-category animate-on-scroll slide-in-bottom delay-3">
+                <h3 class="category-title" style="margin-bottom: 20px; text-align: center; color: var(--primary-color);">Database</h3>
+                <div class="skills-grid" style="margin-bottom: 40px; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px;">
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-database" style="color: #4EA94B; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">MongoDB</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-server" style="color: #880000; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Mongoose</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-fire" style="color: #FFCA28; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Firebase</p></div>
                 </div>
-                <div class="skill-card animate-on-scroll pop-in delay-1">
-                    <div class="skill-icon" style="color: #02569b;"><i class="fa-solid fa-mobile-screen"></i></div>
-                    <h3>Flutter</h3>
-                    <p>Cross-platform Mobile</p>
+            </div>
+
+            <div class="skills-category animate-on-scroll slide-in-bottom delay-4">
+                <h3 class="category-title" style="margin-bottom: 20px; text-align: center; color: var(--primary-color);">Cloud & Tools</h3>
+                <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px;">
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-solid fa-cloud" style="color: #3448C5; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Cloudinary</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-brands fa-aws" style="color: #FF9900; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">AWS S3</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-brands fa-git-alt" style="color: #F05032; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Git</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-brands fa-github" style="color: #181717; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">GitHub</p></div>
+                    <div class="skill-card" style="padding: 15px;"><i class="fa-brands fa-docker" style="color: #2496ED; font-size: 2rem;"></i> <p style="margin-top: 10px; font-weight: 600;">Docker</p></div>
                 </div>
-                <div class="skill-card animate-on-scroll pop-in delay-2">
-                    <div class="skill-icon" style="color: #FF7B54;"><i class="fa-solid fa-server"></i></div>
-                    <h3>REST API</h3>
-                    <p>Microservices</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-spacing">
+        <div class="container animate-on-scroll slide-in-left">
+            <h4 class="section-subtitle">MY JOURNEY</h4>
+            <h2 class="section-title">Experience</h2>
+            <div class="contact-box" style="margin-top: 30px; text-align: left;">
+                <div class="contact-content" style="width: 100%;">
+                    <h3 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 5px;">Full Stack MERN Development Intern</h3>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 15px; color: var(--text-dark);">IBM</h4>
+                    <span style="display: inline-block; background: rgba(255,123,84,0.1); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 20px;">Internship / Project Experience</span>
+                    <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-light); line-height: 1.8;">
+                        <li>Developed a full-stack weather application using React and Node.js.</li>
+                        <li>Built responsive React interfaces and integrated third-party weather APIs.</li>
+                        <li>Worked with REST APIs for backend communication and data retrieval.</li>
+                        <li>Implemented interactive map functionality for location-based weather tracking.</li>
+                        <li>Managed version control and collaboration using Git and GitHub.</li>
+                        <li>Applied end-to-end full-stack development concepts to deliver a functional product.</li>
+                    </ul>
                 </div>
-                <div class="skill-card animate-on-scroll pop-in delay-3">
-                    <div class="skill-icon" style="color: #4db33d;"><i class="fa-solid fa-database"></i></div>
-                    <h3>MongoDB</h3>
-                    <p>NoSQL Database</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section id="featured-project" class="featured-project section-spacing section-light">
+        <div class="container animate-on-scroll pop-in">
+            <h4 class="section-subtitle text-center">FEATURED WORK</h4>
+            <h2 class="section-title text-center">MindMate AI</h2>
+            
+            <div class="contact-box" style="margin-top: 40px; flex-direction: row-reverse; gap: 40px;">
+                <div class="contact-avatar" style="flex: 1; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: linear-gradient(135deg, #1fa2ff, #12d8fa); min-height: 300px; display: flex; justify-content: center; align-items: center;">
+                    <i class="fa-solid fa-brain" style="font-size: 5rem; color: white;"></i>
                 </div>
-                <div class="skill-card animate-on-scroll pop-in delay-4">
-                    <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
-                    <h3>Git/GitHub</h3>
-                    <p>Version Control</p>
+                <div class="contact-content" style="flex: 1; text-align: left;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: var(--text-dark);">Mental Wellness Chatbot</h3>
+                    <p style="margin-bottom: 20px; line-height: 1.7; color: var(--text-light);">An AI-powered mental wellness application featuring switchable Gemini personas (Therapist & CBT Coach). Designed with a modern glassmorphic UI to provide a calming, intuitive user experience.</p>
+                    
+                    <h4 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--primary-color);">Technologies</h4>
+                    <p style="margin-bottom: 20px; font-size: 0.9rem; font-weight: 600; color: var(--text-dark);">React 18 • TypeScript • Vite • Tailwind CSS • Google Gemini AI</p>
+                    
+                    <h4 style="font-size: 1.1rem; margin-bottom: 10px; color: var(--primary-color);">Key Features</h4>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 30px; color: var(--text-light); line-height: 1.8;">
+                        <li>Switchable AI personas (Therapist & Coach)</li>
+                        <li>Real-time natural language processing</li>
+                        <li>Responsive glassmorphic design</li>
+                        <li>Secure state management</li>
+                    </ul>
+                    
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="http://mindmateaichat.vercel.app" target="_blank" class="btn-svg"><span>Live Demo</span></a>
+                        <a href="https://github.com/Harshdubey9670/MindMateAI" target="_blank" class="btn-glow" style="margin: 0; display: flex; align-items: center;">GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,16 +253,16 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card animate-on-scroll pop-in delay-1">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1fa2ff, #12d8fa);">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f6d365, #fda085);">
                         <div class="device-mockup laptop-mockup">
-                            <i class="fa-solid fa-brain"></i>
+                            <i class="fa-solid fa-cloud-sun"></i>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3><a href="http://mindmateaichat.vercel.app" target="_blank">MINDMATE AI</a></h3>
-                        <p>Mental Wellness Chatbot featuring switchable Gemini personas (Therapist & CBT Coach) with glassmorphic UI.</p>
-                        <span class="tech-stack">React 18 • TypeScript • Vite • Tailwind</span>
-                        <a href="http://mindmateaichat.vercel.app" target="_blank" class="project-visit-link">Visit MINDMATE AI <i class="fa-solid fa-arrow-right-long"></i></a>
+                        <h3><a href="#" target="_blank">Weather Application</a></h3>
+                        <p>Full-stack weather dashboard with interactive maps and real-time data integration.</p>
+                        <span class="tech-stack">React • Node.js • REST APIs</span>
+                        <a href="#" target="_blank" class="project-visit-link">GitHub Repo <i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <!-- Project 2 -->
@@ -197,13 +303,40 @@
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education" class="education section-spacing">
+        <div class="container animate-on-scroll pop-in">
+            <h4 class="section-subtitle text-center">ACADEMICS</h4>
+            <h2 class="section-title text-center">Education</h2>
+            <div class="contact-box" style="margin-top: 30px; justify-content: center; text-align: center;">
+                <div class="contact-content" style="width: 100%; max-width: 600px;">
+                    <i class="fa-solid fa-graduation-cap" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3 style="color: var(--text-dark); font-size: 1.5rem; margin-bottom: 10px;">B.Tech — Computer Science and Design</h3>
+                    <p style="color: var(--text-light); line-height: 1.6;">A comprehensive degree program focusing on core computer science fundamentals, software engineering, and modern design principles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section id="github" class="github-section section-spacing section-light">
+        <div class="container animate-on-scroll slide-in-bottom">
+            <h4 class="section-subtitle text-center">OPEN SOURCE</h4>
+            <h2 class="section-title text-center">GitHub Activity</h2>
+            <div style="text-align: center; margin-top: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <p style="margin-bottom: 30px; font-size: 1.1rem; color: var(--text-light);">Building and learning through real-world full-stack, AI, and backend projects.</p>
+                <a href="https://github.com/Harshdubey9670" target="_blank" class="btn-glow" style="margin: 0 auto; display: inline-flex; align-items: center; justify-content: center; gap: 10px;"><i class="fa-brands fa-github" style="font-size: 1.2rem;"></i> View GitHub Profile</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="contact section-spacing section-light">
+    <section id="contact" class="contact section-spacing">
         <div class="container">
             <div class="contact-box animate-on-scroll pop-in">
                 <div class="contact-content">
-                    <h2 class="section-title">CONTACT INFO</h2>
-                    <p>Interested in working together? Let's write say Hi!<br>I'm ready for collaboration projects, or just drop a friendly hello — I'd love to connect!</p>
+                    <h2 class="section-title">Let's Build Something</h2>
+                    <p>Have a project, opportunity, or idea in mind? Let's connect.<br>I'm ready for collaboration projects, or just drop a friendly hello!</p>
                     <a href="mailto:harshdubey112005@gmail.com" class="btn-svg"><span>Contact Me Now</span></a>
                 </div>
                 <div class="contact-avatar animate-on-scroll pop-in delay-2">
@@ -220,11 +353,7 @@
         <div class="container footer-grid">
             <div class="footer-brand animate-on-scroll slide-in-left">
                 <div class="logo">HARSH DUBEY</div>
-                <p>I am just a ring here. I am looking for fullstack web full time gig.</p>
-                <div class="newsletter">
-                    <input type="email" placeholder="Email Address">
-                    <button class="btn btn-primary">Subscribe</button>
-                </div>
+                <p style="margin-top: 15px;">Full Stack Developer specializing in React, Node.js, MongoDB, Java, and Spring Boot.</p>
             </div>
             <div class="footer-links animate-on-scroll pop-in delay-1">
                 <h4>Address</h4>
@@ -236,6 +365,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">My Projects</a></li>
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
@@ -262,7 +392,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>MADE WITH ❤️ BY <a href="https://harshdubey.me" style="color: var(--primary-color); text-decoration: none;">HARSH DUBEY</a></p>
+            <p>© 2026 Harsh Dubey. Built with ❤️</p>
         </div>
     </footer>
 
