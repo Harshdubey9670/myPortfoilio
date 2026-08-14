@@ -1582,3 +1582,9 @@ ul {
     .mobile-only { display: block !important; }
     .desktop-only { display: none !important; }
 }
+
+@media (min-width: 901px) {
+    .row-reverse-desktop {
+        flex-direction: row-reverse !important;
+    }
+}
