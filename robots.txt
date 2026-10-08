@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://harshdubey.me/sitemap.xml
+Sitemap: https://www.harshdubey.me/sitemap.xml
