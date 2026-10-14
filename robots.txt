@@ -1,4 +1,6 @@
+# Allow search engines to crawl the public portfolio and its assets.
 User-agent: *
 Allow: /
 
+# Canonical sitemap
 Sitemap: https://www.harshdubey.me/sitemap.xml

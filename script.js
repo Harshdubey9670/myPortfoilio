@@ -1,21 +1,26 @@
 // ---- Advanced Scroll Animations & Parallax ---- //
 document.addEventListener("DOMContentLoaded", () => {
-    const observerOptions = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.15
-    };
+    // Content stays visible without JavaScript; motion is an optional enhancement.
+    const animatedElements = document.querySelectorAll(".animate-on-scroll");
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if ('IntersectionObserver' in window && !reduceMotion) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove("reveal-pending");
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: "100px", threshold: 0 });
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
+        animatedElements.forEach(el => {
+            if (el.getBoundingClientRect().top > window.innerHeight) {
+                observer.observe(el);
+                el.classList.add("reveal-pending");
             }
         });
-    }, observerOptions);
-
-    const animatedElements = document.querySelectorAll(".animate-on-scroll");
-    animatedElements.forEach(el => observer.observe(el));
+    }
 
     // Smooth Scrolling for Navbar Links
     document.querySelectorAll('.nav a').forEach(anchor => {
@@ -68,21 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Typing effect for hero description
-    const typingElement = document.querySelector('.hero p');
-    if (typingElement) {
-        const text = typingElement.innerHTML;
-        typingElement.innerHTML = '';
-        let i = 0;
-        const typeWriter = () => {
-            if (i < text.length) {
-                typingElement.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            }
-        };
-        setTimeout(typeWriter, 1000); // start after 1s
-    }
+    // Keep the developer role present from the first render.
 
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
